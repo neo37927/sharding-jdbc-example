@@ -20,8 +20,8 @@ public class DemoService {
     private OrderItemRepository orderItemRepository;
     
     public void demo() {
-        orderRepository.createIfNotExistsTable();
-        orderItemRepository.createIfNotExistsTable();
+//        orderRepository.createIfNotExistsTable();
+//        orderItemRepository.createIfNotExistsTable();
         orderRepository.truncateTable();
         orderItemRepository.truncateTable();
         List<Long> orderIds = new ArrayList<>(10);
@@ -47,7 +47,7 @@ public class DemoService {
             orderItemRepository.delete(each);
         }
         System.out.println(orderItemRepository.selectAll());
-        orderItemRepository.dropTable();
-        orderRepository.dropTable();
+//        orderItemRepository.dropTable();
+//        orderRepository.dropTable();
     }
 }
