@@ -22,8 +22,8 @@ public class DemoService {
     public void demo() {
 //        orderRepository.createIfNotExistsTable();
 //        orderItemRepository.createIfNotExistsTable();
-        orderRepository.truncateTable();
-        orderItemRepository.truncateTable();
+//        orderRepository.truncateTable();
+//        orderItemRepository.truncateTable();
         List<Long> orderIds = new ArrayList<>(10);
         System.out.println("1.Insert--------------");
         for (int i = 0; i < 10; i++) {
